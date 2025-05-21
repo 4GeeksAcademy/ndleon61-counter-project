@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.timer{
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    text-align: center;
+    background-color: #2a2a3d;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    font-size: 64px;
+    letter-spacing: 5px;
+    color: #00ffcc;
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+button{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: auto;
+}
+
+input{
+    border: none;
+    border-radius: 10px;
+    width: auto;
+    height: 30px;
+    text-align: center;
+}
+
+#startBtn{
+    background-color: ;
+}

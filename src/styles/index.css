@@ -10,26 +10,3 @@ body {
   align-items: center;
 }
 
-.counter-container {
-  text-align: center;
-  background-color: #2a2a3d;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-}
-
-.counter-text {
-  font-size: 64px;
-  letter-spacing: 5px;
-  color: #00ffcc;
-}
-
-.counter-text {
-  animation: blink 1s step-start infinite;
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0.5;
-  }
-}

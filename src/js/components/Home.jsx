@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Counter from "./Counter"; // ensure capitalization matches file name
+import './home.css';
+
 
 const Home = () => {
   const [seconds, setSeconds] = useState(0);
@@ -9,12 +10,25 @@ const Home = () => {
       setSeconds(prev => prev + 1);
     }, 1000);
 
-    return () => clearInterval(interval); // cleanup on unmount
+    return () => clearInterval(interval); 
   }, []);
 
+   const clearTimer = () =>{
+      setSeconds(0)
+    };
+
   return (
-    <div className="text-center">
-      <Counter seconds={seconds} />
+    <div>
+      <div className="container">
+        <div className="timer">
+           {seconds.toString().padStart(4, '0')}
+        </div>
+        <input type="text" placeholder="Enter a number" />
+        <button id="startBtn">Start</button>
+        <button onClick = {clearTimer} >Clear</button>
+      </div>
+      
+     
     </div>
   );
 };
